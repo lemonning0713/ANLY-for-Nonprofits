@@ -14,7 +14,7 @@
 
 
 ### data folder:
-- `op data anal - Morona BMAP.xlsx`
+- **op data anal - Morona BMAP.xlsx**
   - OP data for 2014 & 2015
   - `subset summary` sheet variables:
     - `Fecha`: date
@@ -30,7 +30,7 @@
     - `N° Horas de impacto de lluvia`: # time of rain, no human activity, less noise
     - `Fuel use`: fuel use (value may be inaccurate at early stages)
     - `N° de vuelos  de helicoptero`: # of helicopters, loud noise
-- `raw data for Andres - Morona BMAP.xlsx`
+- **raw data for Andres - Morona BMAP.xlsx**
   - Environmental data from 2014 ~ 2016
   - `Composition` sheet variables:
     - `Hora Inicio`: start time
@@ -44,7 +44,7 @@
     - `Cola (mm)`: tail length
     - `Codigo foto`: photo code
     - `Codigo voucher`: whether captured
-- `DATOS OPERACIONALES PAD A 2016 FINAL.xlsx`
+- **DATOS OPERACIONALES PAD A 2016 FINAL.xlsx**
   - OP data after 2016
   
 
