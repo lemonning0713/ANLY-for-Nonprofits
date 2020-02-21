@@ -1,0 +1,57 @@
+Feb 21st, 2020
+安排：
+1. 上学期总结感想
+2. 冯大大方向指引
+
+
+上学期的work 总结：
+有work flow但是没有回答想告诉我们什么
+RF 答案不完整 需要更深入
+eg. RF的decision tree
+用更多的角度佐证
+eg. anova, time series drifting, viz
+
+
+冯大大：
+往product方向走
+Jessica：出paper
+visualization/web demo
+不是要怕predictive  modeling
+而是更提供insight 的产物
+
+Partial dependency - visualization (PCA)
+1st ~ 10th PCA
+
+更偏向stat
+R: shiny
+
+更偏python
+bokeh
+
+exploratory data analysis
+Quantile
+Barchart 
+Distribution
+-> pair chart
+Show 图-> 能告诉一个什么故事
+
+
+问Jessica
+框架是否make sense
+
+别的物种的相关数据：对比我们现有的model
+
+
+多try try 多了就有感觉了
+不同angle 切入
+
+
+下一步：
+lujia：clean lat/long
+
+
+
+
+
+附件：
+上学期会议meeting link: https://docs.google.com/document/d/1KDge20YjkV0NPORAQrir8M_6_aD9NcQIIBxZ2S_SW_c/edit?usp=sharing
