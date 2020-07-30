@@ -46,6 +46,17 @@
     - `Codigo voucher`: whether captured
 - **DATOS OPERACIONALES PAD A 2016 FINAL.xlsx**
   - OP data after 2016
+- **List of Variables after Translation**
+  - `S_peeps`: People in PAD
+  - `S_hour`: Hours worked
+  - `S_fuel`: Fuel use
+  - `S_hr/pp (S_hr.pp)`: Working hours per person and cap at 24h
+  - `OPE`: # Operational Equipment
+  - `Rain`: time of rain, no human activity, less noise
+  - `flights`: # of helicopters, loud noise
+  - `Location.Type`: eg. on the floor, in the tree, etc.
+  - `Location..m.`: location (high/low)
+  - `Temp`: Temperature
   
 
 ### other info folder
