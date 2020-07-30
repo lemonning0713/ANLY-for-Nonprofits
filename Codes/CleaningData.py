@@ -11,14 +11,14 @@ import pandas as pd
 import numpy as np
 
 # Load raw data sets
-op_raw = pd.read_excel(open('data/op data anal - Morona BMAP.xlsx', 'rb'), usecols = "A:H", header = 1, sheet_name = 'subset summary')
-op_raw2 = pd.read_excel(open('data/Opdata2.xlsx', 'rb'), usecols = "A:J", header = 2, sheet_name = '2016')
-bio_raw = pd.read_excel(open('data/raw data for Andres - Morona BMAP.xlsx', 'rb'), header = 0, sheet_name = 'Composition')
-bio_raw2 = pd.read_excel(open('data/raw data for Andres - Morona BMAP.xlsx', 'rb'),usecols = "A:G", header = 0, sheet_name = 'Environmental')
-latlong = pd.read_excel(open('data/amphibian plot coordinates.xlsx', 'rb'), usecols = "A:E", header = 0, sheet_name = 'Sheet1')
+op_raw = pd.read_excel(open('../data/Raw Data/op data anal - Morona BMAP.xlsx', 'rb'), usecols = "A:H", header = 1, sheet_name = 'subset summary')
+op_raw2 = pd.read_excel(open('../data/Raw Data/DATOS OPERACIONALES PAD A 2016 FINAL.xlsx', 'rb'), usecols = "A:J", header = 2, sheet_name = '2016')
+bio_raw = pd.read_excel(open('../data/Raw Data/raw data for Andres - Morona BMAP.xlsx', 'rb'), header = 0, sheet_name = 'Composition')
+bio_raw2 = pd.read_excel(open('../data/Raw Data/raw data for Andres - Morona BMAP.xlsx', 'rb'),usecols = "A:G", header = 0, sheet_name = 'Environmental')
+latlong = pd.read_excel(open('../data/Raw Data/amphibian plot coordinates.xlsx', 'rb'), usecols = "A:E", header = 0, sheet_name = 'Sheet1')
 
 # Import variable translation csv
-variable_data = pd.read_csv('data/Variable_translate.csv', header = None, encoding = 'unicode_escape')    
+variable_data = pd.read_csv('../data/Raw Data/Variable_translate.csv', header = None, encoding = 'unicode_escape')    
 
 # Tranfrom csv to dictionary
 trans_dict = variable_data.set_index(0).T.to_dict('index')[1]
@@ -132,7 +132,7 @@ op_raw2['S_hr/pp'] = op_raw2['S_hour']/op_raw2['S_peeps']
 op_raw2['S_hr/pp'][op_raw2['S_hr/pp'] > 24] = 24
 
 # Combine the op data together
-opdat = pd.concat([op_raw,op_raw2],ignore_index=True)
+opdat = pd.concat([op_raw,op_raw2],ignore_index=True,sort=True)
 # Drop the phase column
 opdat = opdat.drop(['Phase'],axis=1)
 # Merge with the bio data set based on the date column
@@ -175,6 +175,6 @@ df['Lat'] = temp8
 df['Long'] = temp9
 df = df.drop(['Long E', 'Lat (N)'],axis=1)
 
-df.to_csv('CleanDatav2.csv')
+df.to_csv('../data/cleaned data/CleanDatav2.csv', index=False)
 #Df is the final clean dataset
 
